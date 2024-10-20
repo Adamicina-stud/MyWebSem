@@ -122,13 +122,23 @@ nav ul li a:hover {
 }
 
 .non-clickable {
-  pointer-events: none; /* Zabezpečí, že položka nebude klikateľná */
-  color: #444444;
+  pointer-events: none;
+  color: #444444; !important;
 }
 
 .non-clickable:hover {
-  color: #222222;
-  cursor: default; /* Ukazovateľ ruky sa nezobrazí */
+  color: #444444; !important;
+  cursor: default;
+}
+
+.dropdown-content .non-clickable {
+  pointer-events: none;
+  color: #444444; !important;
+}
+
+.dropdown-content .non-clickable:hover {
+  color: #444444; !important;
+  cursor: default;
 }
 
 main {
