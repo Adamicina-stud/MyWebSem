@@ -123,21 +123,21 @@ nav ul li a:hover {
 
 .non-clickable {
   pointer-events: none;
-  color: #444444; !important;
+  color: #444444 !important;
 }
 
 .non-clickable:hover {
-  color: #444444; !important;
+  color: #444444 !important;
   cursor: default;
 }
 
 .dropdown-content .non-clickable {
   pointer-events: none;
-  color: #444444; !important;
+  color: #444444 !important;
 }
 
 .dropdown-content .non-clickable:hover {
-  color: #444444; !important;
+  color: #444444 !important;
   cursor: default;
 }
 
