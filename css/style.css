@@ -32,6 +32,14 @@ header {
   padding: 20px;
 }
 
+body.greek .header-top {
+  background-image: url('../img/greek-myths-europa-bull-01.webp');
+}
+
+body.norse .header-top {
+  background-image: url('../img/galileus_Uncover_the_Secrets_of_Norse_Mythology_Language_7268ba5d-3aa9-4606-a3b6-035b57a0715f.jpg');
+}
+
 .header-top::before {
   content: '';
   position: absolute;
@@ -124,12 +132,13 @@ nav ul li a:hover {
 }
 
 main {
+  margin: 20px auto;
   padding: 15px;
   max-width: 1200px;
   background: none;
   border-radius: 8px;
   box-shadow: none;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 body.index main{
@@ -146,6 +155,11 @@ section {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section ul, section ol {
+  padding-left: 20px; /* Pridá priestor medzi okrajom a odrážkami */
+  margin-left: 0; /* Zabezpečí, že margin nie je zväčšený */
 }
 
 /* Footer styles */
