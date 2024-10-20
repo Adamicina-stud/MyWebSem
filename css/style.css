@@ -1,11 +1,9 @@
-/* Reset some default browser styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General body styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -15,7 +13,6 @@ body {
   color: #333;
 }
 
-/* Header styles */
 header {
   position: fixed;
   top: 0;
@@ -25,16 +22,6 @@ header {
   padding: 0;
   text-align: center;
 }
-
-/*.header-top {
-  background-image: url('img/ceiling-fresco-Aurora-Guido-Reni-Casino-Rospigliosi.jpg');
-  background-size: cover;
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-*/
 
 .header-top {
   background-image: url('../img/ceiling-fresco-Aurora-Guido-Reni-Casino-Rospigliosi.webp');
@@ -129,7 +116,6 @@ nav ul li a:hover {
   cursor: default; /* Ukazovateľ ruky sa nezobrazí */
 }
 
-/* Main content area */
 main {
   padding: 15px;
   max-width: 1200px;
@@ -174,11 +160,18 @@ footer {
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 2px 0;
   }
 
   main {
-    margin: 10px;
     padding: 10px;
+  }
+
+  body.index main {
+      margin-top: 225px;
+  }
+
+  body.myth main {
+    margin-top: 200px;
   }
 }
