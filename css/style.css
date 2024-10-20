@@ -17,6 +17,10 @@ body {
 
 /* Header styles */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #333;
   padding: 0;
   text-align: center;
@@ -128,12 +132,19 @@ nav ul li a:hover {
 /* Main content area */
 main {
   padding: 15px;
-  margin: 20px auto;
   max-width: 1200px;
-  /* Odstránenie pozadia */
   background: none;
   border-radius: 8px;
   box-shadow: none;
+  margin-bottom: 10px;
+}
+
+body.index main{
+  margin-top: 155px;
+}
+
+body.myth main{
+  margin-top: 100px;
 }
 
 section {
@@ -146,13 +157,14 @@ section {
 
 /* Footer styles */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  position: relative;
-  width: 100%;
-  bottom: 0;
+  padding: 2px 0;
 }
 
 /* Responsive design for smaller devices */
