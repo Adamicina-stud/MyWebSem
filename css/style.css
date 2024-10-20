@@ -75,13 +75,20 @@ nav ul li a:hover {
   color: #bababa;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .dropdown-content {
   display: none;
+  left: 50%;
+  transform: translate(-50%);
   position: absolute;
   background-color: #333;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
+  white-space: nowrap;
 }
 
 .dropdown-content a {
@@ -89,7 +96,7 @@ nav ul li a:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
@@ -162,6 +169,7 @@ footer {
   nav ul li {
     margin: 2px 0;
   }
+
 
   main {
     padding: 10px;
