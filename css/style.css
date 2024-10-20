@@ -1,252 +1,3 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
-/*==============================================================================
-
 /* Reset some default browser styles */
 * {
   margin: 0;
@@ -267,20 +18,55 @@ body {
 /* Header styles */
 header {
   background-color: #333;
-  color: #fff;
-  padding: 10px 0;
+  padding: 0;
   text-align: center;
 }
 
-header h1 {
+/*.header-top {
+  background-image: url('img/ceiling-fresco-Aurora-Guido-Reni-Casino-Rospigliosi.jpg');
+  background-size: cover;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
   margin-bottom: 10px;
+}
+*/
+
+.header-top {
+  background-image: url('../img/ceiling-fresco-Aurora-Guido-Reni-Casino-Rospigliosi.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white; /* Zabezpečí, že text bude viditeľný */
+  padding: 20px;
+}
+
+.header-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Pridá tmavší overlay */
+  z-index: 1;
+}
+
+.header-top h1,
+.header-top p {
+  position: relative;
+  z-index: 2; /* Zabezpečí, že text bude nad overlayom */
+}
+
+nav {
+  color: #fff;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 10px;
 }
 
 nav ul li {
@@ -290,18 +76,70 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+  color: #bababa;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Zobrazenie dropdown pri hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Štýl pre hlavné tlačidlo v dropdowne */
+.dropbtn {
+  cursor: pointer;
+}
+
+.non-clickable {
+  pointer-events: none; /* Zabezpečí, že položka nebude klikateľná */
+  color: #444444;
+}
+
+.non-clickable:hover {
+  color: #222222;
+  cursor: default; /* Ukazovateľ ruky sa nezobrazí */
 }
 
 /* Main content area */
 main {
-  padding: 20px;
+  padding: 15px;
   margin: 20px auto;
   max-width: 1200px;
+  /* Odstránenie pozadia */
+  background: none;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+section {
+  padding: 20px;
   background: white;
+  margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -312,7 +150,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
@@ -324,10 +162,11 @@ footer {
   }
 
   nav ul li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   main {
     margin: 10px;
+    padding: 10px;
   }
 }
